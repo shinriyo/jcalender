@@ -9,6 +9,9 @@ Overview
 
 日本のカレンダー
 
+http://www.h3.dion.ne.jp/~sakatsu/holiday_logic5.htm#Python
+これをベースにした。
+
 ## Demo
 
 N/A
@@ -25,15 +28,10 @@ Go
 
 ### インポート方法
 ```
-from mewcalc import MewCalc
 ```
 
-### 猫の年齢を生まれたdateから計算する
+### 使い方
 ```
-from datetime import datetime, date, time
-mc = MewCalc()
-born = date(1998, 1, 4)
-res = mc.calculate(born)
 ```
 
 ### 注意
