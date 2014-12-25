@@ -31,29 +31,42 @@ go run test/test.go
 
 ### インポート方法
 ```
+import (
+  jc "github.com/shinriyo/jcalender"
+)
 ```
+
+jcalenderは長いので省略したjcにエイリアス。
 
 ### 使い方
 ```
+params = jc.Params{Year: 1984, Month:1, Day:1, Date:time.Time{}}
+name = jc.GetHolidayName(params)
+// 元旦
+fmt.Printf("Name: %#v\n", name)
 ```
 
 ### 注意
 
-2016年以降は無理です。
+2016年以降は対応できないかもしれません。
 
 ## Install
 
 ```
-pip install mewcalc
+go get github.com/shinriyo/jcalender
 ```
 
 ## Contribution
 
+sinriyo
+
 ## Licence
 
-MIT.
+CopyRight(C) K.Tsunoda(AddinBox) 2001 All Rights Reserved.
+(http://www.h3.dion.ne.jp/~sakatsu/index.htm)
 
 ## Author
 
 [shinriyo](https://github.com/shinriyo/)
+[K.Tsunoda](http://www.h3.dion.ne.jp/~sakatsu/index.htm)
 
