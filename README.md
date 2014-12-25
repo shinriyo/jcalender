@@ -1,5 +1,3 @@
-[![Build Status](https://)](https://)
-
 jCalender
 ====
 
