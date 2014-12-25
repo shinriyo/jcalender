@@ -21,11 +21,11 @@ func VernalEquinox(y int) int {
 	if y <= 1947 {
 		d = 0
 	} else if y <= 1979 {
-		d = int(math.Floor(20.8357+0.242194*float64(y - 1980)-math.Floor(float64(y - 1980)/4.0)))
+		d = int(math.Floor(20.8357 + 0.242194 * float64(y - 1980) - math.Floor(float64(y - 1980) / 4.0)))
 	} else if y <= 2099 {
-		d = int(math.Floor(20.8431+0.242194*float64(y - 1980)-math.Floor(float64(y - 1980)/4.0)))
+		d = int(math.Floor(20.8431 + 0.242194 * float64(y - 1980) - math.Floor(float64(y - 1980) / 4.0)))
 	} else if y <= 2150 {
-		d = int(math.Floor(21.8510+0.242194*float64(y - 1980)-math.Floor(float64(y - 1980)/4.0)))
+		d = int(math.Floor(21.8510 + 0.242194 * float64(y - 1980) - math.Floor(float64(y - 1980) / 4.0)))
 	}
 
 	return d
@@ -38,11 +38,11 @@ func AutumnEquinox(y int) int {
 	if y <= 1947 {
 		d = 0
 	} else if y <= 1979 {
-		d = int(math.Floor(23.2588+0.242194*float64(y - 1980)-math.Floor(float64(y - 1980)/4.0)))
+		d = int(math.Floor(23.2588 + 0.242194 * float64(y - 1980) - math.Floor(float64(y - 1980) / 4.0)))
 	} else if y <= 2099 {
-		d = int(math.Floor(23.2488+0.242194*float64(y - 1980)-math.Floor(float64(y - 1980)/4.0)))
+		d = int(math.Floor(23.2488 + 0.242194 * float64(y - 1980) - math.Floor(float64(y - 1980) / 4.0)))
 	} else if y <= 2150 {
-		d = int(math.Floor(24.2488+0.242194*float64(y - 1980)-math.Floor(float64(y - 1980)/4.0)))
+		d = int(math.Floor(24.2488 + 0.242194 * float64(y - 1980) - math.Floor(float64(y - 1980) / 4.0)))
 	} else {
 		d = 0
 	}
@@ -53,15 +53,12 @@ func AutumnEquinox(y int) int {
 /*
     GetHolidayName() の呼び出し方法は2通りあります。
 
-    1つ目の方法は、3つの引数 year, month, day に整数を渡す方法です。
+    1つ目の方法は、3つの引数 Year, Month, Day に整数を渡したParamsを渡す方法です。
     もうひとつの方法は前述のキーワード引数 date に datetime.date のオブジェクトを渡す方法です。
     この場合は year, month, day を渡す必要はなく、また、渡したとしても無視されます。
 
-    GetHolidayName() は、その日が祝日であれば 
-        Python 2.x 系以前の場合には Unicode 文字列で
-        Python 3.x 系以降の場合には文字列で
-    祝日名を返します。
-    指定した日が祝日でなければ、 Python のバージョンによらず nil を返します。
+    GetHolidayName() は、その日が祝日であれば祝日名を返します。
+    指定した日が祝日でなければ、 "" を返します。
 */
 // year = nil, month = nil, day = nil, p.Date = nil
 type Params struct {
