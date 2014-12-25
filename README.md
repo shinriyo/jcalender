@@ -20,7 +20,7 @@ N/A
 
 ## Requirement
 
-Go
+go version go1.3.3 or higher
 
 ## Usage
 
