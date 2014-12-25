@@ -23,6 +23,11 @@ func main() {
 	name = jc.GetHolidayName(params)
 	// 体育の日
 	fmt.Printf("Name: %#v\n", name)
+
+	params = jc.Params{Year: 2007, Month:4, Day:29, Date:time.Time{}}
+	name = jc.GetHolidayName(params)
+	// 昭和の日
+	fmt.Printf("Name: %#v\n", name)
 }
 
 
