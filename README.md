@@ -36,14 +36,29 @@ import (
 )
 ```
 
-jcalenderは長いので省略したjcにエイリアス。
+jcalenderは長いので省略したjcにエイリアスしている。
 
 ### 使い方
 ```
-params = jc.Params{Year: 1984, Month:1, Day:1, Date:time.Time{}}
-name = jc.GetHolidayName(params)
-// 元旦
-fmt.Printf("Name: %#v\n", name)
+package main
+
+import (
+  jc "github.com/shinriyo/jcalender"
+  "fmt"
+  "time"
+)
+
+func main() {
+  params := jc.Params{Year: 1984, Month:1, Day:1, Date:time.Time{}}
+  name := jc.GetHolidayName(params)
+  // 元旦
+  fmt.Printf("Name: %#v\n", name)
+}
+```
+
+#### 結果
+```
+Name: "元日"
 ```
 
 ### 注意
